@@ -4,7 +4,10 @@ def solution(s):
     for x in a :
         for idx in range(len(x)) :
             if idx %2 == 0 :
-                a[idx] = a[idx].upper()
+                #error a[idx] = a[idx].upper() 
+                
             else : 
-                a[idx] = a[idx].lower()
+                #error a[idx] = a[idx].lower()
     return a
+
+print(solution('abcD DF De'))
