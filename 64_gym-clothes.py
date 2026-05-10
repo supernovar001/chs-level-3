@@ -4,7 +4,6 @@ def solution(n, lost,reserve):
     reserve_set = set(reserve)-set(lost)
 
     for student in sorted(reserve_set):
-
     # 앞 번호 학생에게 빌려주기
         if student-1 in lost_set :
             lost_set.remove(student-1)

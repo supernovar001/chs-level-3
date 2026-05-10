@@ -5,9 +5,7 @@ def solution( a , b , n) :
     #  a # cal_empty_cola
     #  b # cal_new_cola
     #  n # empty_cola
-
     # return 상빈이가 받을 수 있는 콜라 수 
-
 
     #1. 받을 수 있는 콜라 공식 : 
     # 교환할 빈 콜라 병 수= (n//a)
