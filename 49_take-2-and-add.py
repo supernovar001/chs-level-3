@@ -1,20 +1,11 @@
-def solution( a , b , n) :
-# a : 빈병 a개를 주면 새 콜라 b병을 주는 
-    count = 0
-    while n >= a :  
-    #  a # cal_empty_cola
-    #  b # cal_new_cola
-    #  n # empty_cola
+def solution(numbers):
+    result = []
+    for i in range(0,len(numbers)-1):
+        for j in range(i+1, len(numbers)):    
+            two_add = numbers[i]+numbers[j]
+            result.append(two_add)
+    
+    return sorted(list(set(result)))
 
-    # return 상빈이가 받을 수 있는 콜라 수 
-
-
-    #1. 받을 수 있는 콜라 공식 : 
-    # 교환할 빈 콜라 병 수= (n//a)
-        return_cola = (n // a) * b
-        n = return_cola + n % a
-        count += return_cola
-    return count 
-
-print(solution(2,1,20))
-print(solution(3,1,20))
+print(solution([2,1,3,4,1]))    #[2,3,4,5,6,7]
+print(solution([5,0,2,7]))      #[2,5,7,9,12]

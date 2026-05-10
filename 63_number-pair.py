@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def solution(X,Y):
     # 숫자 개수 저장용 딕셔너리 생성
     count_X = {}
@@ -40,3 +41,18 @@ print(solution("100", "203045"))   # 0
 print(solution("100", "123450"))   # 10
 print(solution("12321", "42531"))  # 321
 print(solution("5525", "1255"))    # 552
+=======
+def solution(x,y):
+    result = ''
+    for i in range(len(x)) :
+        for j in range(len(y)) :
+            if x[i] == y[j] :
+                result += x[i]
+    print(result)
+    list_result = list(result)
+    list_result.sort(reverse = True)
+    return ''.join(list_result)
+
+print(solution("12321","42531")) #321
+print(solution("100","203045")) #0
+>>>>>>> 6ba9101ebcf000990d047509989cff3be8a377a9

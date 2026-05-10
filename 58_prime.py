@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def is_prime(n):
     # "check if a number is prime"
     if n < 2 : 
@@ -22,3 +23,20 @@ def solution(nums):
 
 print(solution([1,2,3,4]))
 print(solution([1,2,7,6,4]))
+=======
+# 약수의 개수
+def count_divisors(num):
+    count = 0
+    for i in range(1, int(num)**0.5 + 1):
+        if num % i == 0 :
+            count +=1
+            if i != num // i :
+                count += 1
+    return count
+
+def solution(number, limit, power):
+    power = count_divisors(number)
+    if power > limit :
+        power = limit
+    return power
+>>>>>>> 6ba9101ebcf000990d047509989cff3be8a377a9
